@@ -1,4 +1,4 @@
 (ns zalgo.main
     (:require [zalgo.core :refer [toZalgo]]))
 
-(defn -main [] (toZalgo "Lol"))
+(defn -main [input file] (toZalgo input file))

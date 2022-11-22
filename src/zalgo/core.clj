@@ -43,7 +43,7 @@
     )
 
 (defn toZalgo
-    "turns given String into zalgo-string" [input]
-    (spit "C:\\Users\\Maxi\\Desktop\\DOOM.txt" (reduce str (map toZalgoChar input))))
+    "turns given String into zalgo-string" [input file]
+    (spit file (reduce str (map toZalgoChar input))))
 
-(defn -main [arg] (toZalgo arg))
+(defn -main [] (toZalgo "Bye World" "C:\\Users\\Maxi\\Desktop\\DOOM.txt"))
